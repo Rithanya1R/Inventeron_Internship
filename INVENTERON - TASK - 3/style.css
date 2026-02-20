@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(bg2.jpg);
+  background-size: cover;
+}
+
+.container {
+  background: linear-gradient(to left ,rgb(45, 125, 230),rgb(30, 188, 240));
+  padding: 20px;
+  width: 300px;
+  border: 2px solid;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+input {
+  width: 250px;
+  padding: 8px;
+  border: 2px solid;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 8px;
+  width: 100%;
+  cursor: pointer;
+  border: 2px solid;
+  background-color: rgb(19, 171, 85);
+}
+
+.hidden {
+  display: none;
+}
+
+.captcha-box {
+  font-weight: bold;
+  background: #eee;
+  padding: 5px;
+  margin-bottom: 10px;
+}
