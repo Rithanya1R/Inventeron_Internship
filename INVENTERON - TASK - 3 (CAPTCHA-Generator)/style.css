@@ -9,28 +9,40 @@ body {
 }
 
 .container {
-  background: linear-gradient(to left ,rgb(45, 125, 230),rgb(30, 188, 240));
-  padding: 20px;
-  width: 300px;
-  border: 2px solid;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background: linear-gradient(to left, rgb(45, 125, 230), rgb(30, 188, 240));
+  padding: 35px 25px;   /* better spacing */
+  width: 320px;
+
+  border-radius: 12px;
+  border: none;  /* remove harsh border */
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+
   text-align: center;
 }
 
 input {
-  width: 250px;
-  padding: 8px;
-  border: 2px solid;
-  margin-bottom: 15px;
+  width: 100%;   /* responsive */
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 18px;
+  box-sizing: border-box;
 }
 
 button {
-  padding: 8px;
+  padding: 10px;
   width: 100%;
   cursor: pointer;
-  border: 2px solid;
+  border: none;
+  border-radius: 6px;
   background-color: rgb(19, 171, 85);
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: rgb(15, 150, 70);
 }
 
 .hidden {
@@ -40,6 +52,7 @@ button {
 .captcha-box {
   font-weight: bold;
   background: #eee;
-  padding: 5px;
-  margin-bottom: 10px;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 5px;
 }
