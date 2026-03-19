@@ -2,12 +2,16 @@ import React from "react";
 import "./Header.css";
 import profileIcon from "../../assets/profileIcon.jpg"
 
-function Header(){
-  const name = "Rithu";
+function Header(props){
+  // const name = "Rithu";
   return(
     <div className="header">
       <div className="profileName">
-        {`Welcome ${name}`}
+        Welcome {props.profile.name}
+        <br/>
+        Role {props.profile.role}
+        <br />
+        company {props.profile.company}
       </div>
 
       <div className="profileIcon">
